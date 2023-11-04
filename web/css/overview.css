@@ -1,0 +1,163 @@
+/* Import the Quicksand and Pixelify Sans fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pixelify+Sans');
+
+body {
+    background-color: black;
+    color:white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: left; 
+}
+
+.main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#username {
+    text-align: center;
+    
+}
+
+#diamondIcon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+
+#diamondcss {
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+
+/* Style for Navbar */
+#username {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style for Diamonds */
+#diamonds {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #66ccff; /* Light blue color for text */
+}
+
+/* Style for Goals */
+.goal-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.goal-box {
+    background-color: #1e3a75; /* Dark blue background color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.goal-box:hover {
+    background-color: #2f549d; /* Slightly lighter blue on hover */
+}
+
+.goal-input input, .goal-input button {
+    font-size: 16px;
+    color: #333; /* Dark text color */
+    background-color: #fff; /* White background for input field */
+    border: none;
+    border-radius: 5px;
+}
+
+.goal-input input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.goal-input button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff; /* Bright blue color for button */
+    color: #fff;
+    cursor: pointer;
+}
+
+.goal-input button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* Style for "eeeeee" button */
+button {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-container {
+    background-color: #007bff; /* Bright red background color */
+    color: #fff; /* White text color */
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px; /* Display at the bottom of the screen */
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+#error-container.show {
+    display: block; /* Show the container when it has the "show" class */
+    animation: fadeOut 10s forwards; /* Add a fading animation */
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; /* Hide the container at the end of the animation */
+    }
+}
+
+.error-message {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .error-message.show {
+    display: block;
+    opacity: 1;
+  }
